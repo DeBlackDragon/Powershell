@@ -1,0 +1,5 @@
+"ResourceName","DnsZone","IpAddress"
+"stXXXdev01","privatelink.file.core.windows.net","10.0.1.6"
+"stXXXdev01","privatelink.blob.core.windows.net","10.0.2.4"
+"stXXXdev02","privatelink.file.core.windows.net","10.0.1.4"
+"stXXXdev02","privatelink.blob.core.windows.net","10.0.1.5"
