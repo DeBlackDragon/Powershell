@@ -1,4 +1,35 @@
+<#
+.SYNOPSIS
+    This script lists the private endpoint records for a given tenant scope, subscription or management group.
+    It uses the Resource Graph to query the private endpoints and exports the results to a CSV file.
 
+.PARAMETER SubscriptionId
+   The ID of the subscription to list private endpoint records for.
+
+.PARAMETER ManagementGroup
+    The ID of the management group to list private endpoint records for.
+
+.NOTES
+    Author: [Benjamin Dassow]
+    Date: [19.07.2023]
+    Version: [0.1]
+
+.EXAMPLE
+    List-PrivateEndpointsRecords.ps1 -ManagementGroup "myManagementGroup"
+
+    This example lists the private endpoint records for the  "myManagementGroup" management group.
+
+.EXAMPLE
+    List-PrivateEndpointsRecords.ps1 SubscriptionId "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+
+    This example lists the private endpoint records for the  Subscription with the given Id.
+
+.EXAMPLE
+    List-PrivateEndpointsRecords.ps1
+
+    This example lists the private endpoint records for the current tenant scope.    
+
+#>
 #Requires -Modules Az.Accounts, Az.ResourceGraph
 [CmdletBinding()]
 param(
