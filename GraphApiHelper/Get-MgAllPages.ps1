@@ -1,3 +1,6 @@
+# Kudos to Liam Cleary for the original code:
+# https://helloitsliam.com/2021/10/12/using-invoke-mggraphrequest-within-the-microsoft-graph-powershell/
+
 function Get-MgAllPages {
     [CMDletbinding(
         ConfirmImpact = "Medium",
